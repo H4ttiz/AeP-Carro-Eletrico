@@ -76,3 +76,26 @@ class MobileNavbar {
       slideInterval = setInterval(nextSlide, 5000);
     });
   });
+
+  // Videos imagens
+  document.querySelectorAll('.media-box').forEach(box => {
+  const img = box.querySelector('img');
+  const video = box.querySelector('video');
+
+  box.addEventListener('mouseenter', () => {
+    img.style.display = 'none';
+    video.style.display = 'block';
+    video.currentTime = 0;
+    video.play();
+  });
+
+  box.addEventListener('mouseleave', () => {
+    video.pause();
+    video.style.display = 'none';
+    img.style.display = 'block';
+  });
+
+  // Garante que vídeo inicie oculto
+  video.style.display = 'none';
+  
+});
