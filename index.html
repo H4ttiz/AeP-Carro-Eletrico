@@ -9,8 +9,9 @@
 </head>
 <body>
   <header>
+    <!-- NAVBAR -->
     <nav>
-      <a class="logo" href="/">Teste</a>
+      <a class="logo" href="/">Car Regar</a>
       <div class="mobile-menu">
         <div class="line1"></div>
         <div class="line2"></div>
@@ -28,7 +29,7 @@
   <main>
 
     <!-- Pagina Principal com design de Carrossel -->
-    <section class="slider">
+    <section class="slider hidden">
       <div class="slider-content">
         <input type="radio" name="btn-radio" id="radio1" checked>
         <input type="radio" name="btn-radio" id="radio2">
@@ -66,7 +67,7 @@
     </section>
 
     <!-- Informações sobre carros Elétricos -->
-    <section class="carrosE d-flex justify-content-between align-items-center" style="gap: 20px;">
+    <section class="carrosE hidden d-flex justify-content-between align-items-center" style="gap: 20px;">
       <div style="width: 600px; padding: 20px; margin: 200px; ">
         <h1>Carros Elétricos</h1>
         <p>Os carros elétricos representam uma revolução sustentável no setor automotivo, oferecendo uma alternativa ecológica aos veículos movidos a combustíveis fósseis. Alimentados por baterias recarregáveis, esses veículos emitem zero poluentes durante seu uso, contribuindo significativamente para a redução da emissão de gases de efeito estufa e da poluição sonora nos centros urbanos.</p>
@@ -78,8 +79,8 @@
     </section>
 
     <!-- Carros Eletricos mais vendidos no Brasil -->
-     <h1>Carros Elétricos mais vendidos no Brasil</h1>
-    <section>
+    <section class="hidden">
+      <h1>Carros Elétricos mais vendidos no Brasil</h1>
       <div class="grid">
         <div class="media-box" data-video="videos/dolphin-mini.mp4" data-img="https://neonseguros.com.br/wp-content/uploads/2024/05/byd-dolphinmini-polar-black.jpg" data-link="#">
           <a href="https://www.byd.com/br/car/dolphin-mini?&utm_campaign=byd_PH~tffc_OJ~pgview_CN~byd-pmax-line-up_MK~nacio_&utm_source=PB~gpmax_&utm_content=AG~dolphin-mini-generico_TG~da_DG~25g_MD~dolmin_ME~sepma_CH~display_PT~goads_CR~pmax-dinamico_CT~notapply_VD~na_&utm_medium=FT~notapply&gad_source=1&gad_campaignid=21890170243&gbraid=0AAAAAo-fB8EEV0rKA_ZhEUHqSR2lYF8Ru&gclid=CjwKCAjw24vBBhABEiwANFG7yx0KNfOLnPxdwkMRMpl1nQLEk_o7-x6qiszKWDfFfCb-X_TsbhfHTBoCRn8QAvD_BwE" target="_blank">
@@ -117,8 +118,9 @@
     </section>
 
     <!-- Carros Eletricos custo-beneficio -->
-    <section class="custo-beneficio">
-      <div class="car-block">
+    <section class="custo-beneficio hidden">
+      <h1>Elétricos Mais Custo Beneficio</h1>
+      <div class="car-block hidden" >
         <img src="https://cdn.motor1.com/images/mgl/Ooo3NB/s1/renault-kwid-e-tech.jpg" alt="Renault Kwid E-Tech">
         <div class="info">
           <h2>Renault Kwid E-Tech</h2>
@@ -128,7 +130,7 @@
         </div>
       </div>
 
-      <div class="car-block reverse">
+      <div class="car-block reverse hidden">
         <img src="https://neonseguros.com.br/wp-content/uploads/2024/05/byd-dolphinmini-polar-black.jpg" alt="BYD Dolphin Mini">
         <div class="info">
           <h2>BYD Dolphin Mini</h2>
@@ -138,7 +140,7 @@
         </div>
       </div>
 
-      <div class="car-block">
+      <div class="car-block hidden">
         <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/07/chery_eq-dianteira.jpg?w=1200&h=900&crop=1" alt="Caoa Chery iCar">
         <div class="info">
           <h2>Caoa Chery iCar</h2>
@@ -148,7 +150,7 @@
         </div>
       </div>
 
-      <div class="car-block reverse">
+      <div class="car-block reverse hidden">
         <img src="https://www.jacmotors.com.br/public/media/veiculos/1697652148-whatsapp_image_2023-10-18_at_12.34.22_1.jpeg" alt="JAC E-JS1">
         <div class="info">
           <h2>JAC E-JS1</h2>
@@ -158,8 +160,8 @@
         </div>
       </div>
 
-      <div class="car-block">
-        <img src="https://cdn.motor1.com/images/mgl/Oo2K4o/s3/ora-03---good-cat---edicao-espcial-china-1.jpg" alt="GWM Ora 03 (Good Cat)">
+      <div class="car-block hidden">
+        <img class="hidden" src="https://cdn.motor1.com/images/mgl/Oo2K4o/s3/ora-03---good-cat---edicao-espcial-china-1.jpg" alt="GWM Ora 03 (Good Cat)">
         <div class="info">
           <h2>GWM Ora 03 (Good Cat)</h2>
           <h4>R$ 150.000</h4>
@@ -170,9 +172,11 @@
     </section>
 
     <!-- Mapa carregamento Carros Eletricos -->
-    <h1>Mapa</h1>
-    <h5>Um dos principais problemas dos carros Elétricos sao as poucas estações de carregamento, com esse mapa voce podera encontrar qual estação esta mais proxima de voce.</h5>
-    <a href="mapa.html"><button type="button" class="btn btn-secondary btn-lg">Ir para MAPA</button></a>
+    <section class="hidden">
+      <h1>Mapa</h1>
+      <h5>Um dos principais problemas dos carros Elétricos sao as poucas estações de carregamento, com esse mapa voce podera encontrar qual estação esta mais proxima de voce.</h5>
+      <a href="mapa.html"><button type="button" class="btn btn-secondary btn-lg">Ir para MAPA</button></a>
+    </section>
 
     <footer>
       &copy; Jogo Fechado

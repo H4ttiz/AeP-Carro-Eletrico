@@ -293,10 +293,17 @@
     background: #0056b3;
   }
 
+
 .custo-beneficio {
   background: #23232e;
   color: white;
   padding: 20px;
+}
+
+.custo-beneficio h1 {
+  font-size: 5em;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .custo-beneficio button {
@@ -350,4 +357,18 @@
     text-align: center;
     padding: 20px 0;
     position: relative;
+  }
+
+  .hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
+
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
   }
