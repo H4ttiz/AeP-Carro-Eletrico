@@ -133,80 +133,75 @@ nav {
     transform: translateX(0);
   }
 }
-
-
   
   main {
     margin-top: 8vh;
     height: calc(92vh - 8vh);
   }
-  
-  /* Slider Styles */
-  section.slider {
-    width: 100%;
-    height: calc(100vh - 8vh); 
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .slider-content {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  
-  .slider-content input {
-    display: none;
-  }
-  
-  .slides-container {
-    display: flex;
-    width: 300%;
-    height: 100%;
-    transition: transform 0.5s ease;
-  }
-  
-  .slide-box {
-    width: 33.333%;
-    height: 100%;
-    position: relative;
-  }
-  
-  .slide-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .img-mobile {
-    display: none;
-  }
-  
-  .manual-btn, .nav-auto div {
-    width: 12px;
-    height: 12px;
-    border: 1px solid #23232e;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.2s;
-  }
-  
-  .manual-btn:hover {
-    background-color: #23232e;
-  }
-  
-  #radio1:checked ~ .slides-container {
-    transform: translateX(0);
-  }
-  
-  #radio2:checked ~ .slides-container {
-    transform: translateX(-33.333%);
-  }
-  
-  #radio3:checked ~ .slides-container {
-    transform: translateX(-66.666%);
-  }
 
+  .slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6); /* escurece o vídeo para melhor contraste */
+  z-index: 0;
+}
+
+.video-overlay-text {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 1;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.video-overlay-text h1 {
+  font-size: 10rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.video-overlay-text h2 {
+  font-size: 3rem;
+  margin: 8px 0 0;
+  font-weight: 400;
+}
+
+.video-button {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  background-color: #1313f0;; /* azul */
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.video-button:hover {
+  background-color: #0056b3; /* azul mais escuro no hover */
+}
+
+
+  
   .carrosE {
     background: #23232e;
     color: white;

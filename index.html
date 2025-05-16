@@ -20,7 +20,7 @@
       <ul class="nav-list">
         <li><a href="index.html">Início</a></li>
         <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="#">Lojas</a></li>
+        <li><a href="lojas.html">Lojas</a></li>
         <li><a href="mapa.html">Mapa</a></li>
       </ul>
     </nav>
@@ -28,61 +28,37 @@
 
   <main>
 
-    <!-- Pagina Principal com design de Carrossel -->
-    <section class="slider hidden">
-      <div class="slider-content">
-        <input type="radio" name="btn-radio" id="radio1" checked>
-        <input type="radio" name="btn-radio" id="radio2">
-        <input type="radio" name="btn-radio" id="radio3">
+    <section class="slider">
+      <video autoplay muted loop playsinline class="video-bg">
+        <source src="videos/maringa.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
 
-        <div class="slides-container">
-          <div class="slide-box">
-            <img class="img-desktop" src="img/BYD_PCD_Black-Banner_2025_Desk_Final_3.png" alt="slide 1">
-            <img class="img-mobile" src="img/BYD_PCD_Black-Banner_2025_Desk_Final_3.png" alt="slide 1">
-          </div>
-
-          <div class="slide-box">
-            <img class="img-desktop" src="img/New_Shark_Desk_Home_Banner.png" alt="slide 2">
-            <img class="img-mobile" src="img/New_Shark_Desk_Home_Banner.png" alt="slide 2">
-          </div>
-
-          <div class="slide-box">
-            <img class="img-desktop" src="img/song-plus-premiumPC.PNG" alt="slide 3">
-            <img class="img-mobile" src="img/song-plus-premiumPC.PNG" alt="slide 3">
-          </div>
-        </div>
-
-        <div class="nav-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-        </div>
-
-        <div class="nav-manual">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-        </div>
+      <div class="video-overlay-text">
+        <h1>EletrIngá</h1>
+        <h2>Maringá acelera rumo ao futuro elétrico</h2>
       </div>
+
+      <a href="sobre.html" class="video-button">Sobre</a>
     </section>
 
     <!-- Informações sobre carros Elétricos -->
-    <section class="carrosE hidden d-flex justify-content-between align-items-center" style="gap: 20px;">
-      <div style="width: 600px; padding: 20px; margin: 200px; ">
+    <section class="carrosE d-flex justify-content-between align-items-center" style="gap: 20px;">
+      <div class="hidden" style="width: 600px; padding: 20px; margin: 200px; ">
         <h1>Carros Elétricos</h1>
         <p>Os carros elétricos representam uma revolução sustentável no setor automotivo, oferecendo uma alternativa ecológica aos veículos movidos a combustíveis fósseis. Alimentados por baterias recarregáveis, esses veículos emitem zero poluentes durante seu uso, contribuindo significativamente para a redução da emissão de gases de efeito estufa e da poluição sonora nos centros urbanos.</p>
       </div>
       <img src="https://cdn.motor1.com/images/mgl/xqnNbk/s3/byd-dolphin-mini-concessionaria.jpg"
-           class="img-fluid"
+           class="img-fluid hidden"
            style="width: 1000px; border-radius: 8px; padding: 20px; margin: 10px;" 
            alt="Carro elétrico">
     </section>
 
     <!-- Carros Eletricos mais vendidos no Brasil -->
-    <section class="hidden">
-      <h1>Carros Elétricos mais vendidos no Brasil</h1>
-      <div class="grid">
-        <div class="media-box" data-video="videos/dolphin-mini.mp4" data-img="https://neonseguros.com.br/wp-content/uploads/2024/05/byd-dolphinmini-polar-black.jpg" data-link="#">
+    <section>
+      <h1 class="hidden">Carros Elétricos mais vendidos no Brasil</h1>
+      <div class="grid hidden">
+        <div class="media-box hidden" data-video="videos/dolphin-mini.mp4" data-img="https://neonseguros.com.br/wp-content/uploads/2024/05/byd-dolphinmini-polar-black.jpg" data-link="#">
           <a href="https://www.byd.com/br/car/dolphin-mini?&utm_campaign=byd_PH~tffc_OJ~pgview_CN~byd-pmax-line-up_MK~nacio_&utm_source=PB~gpmax_&utm_content=AG~dolphin-mini-generico_TG~da_DG~25g_MD~dolmin_ME~sepma_CH~display_PT~goads_CR~pmax-dinamico_CT~notapply_VD~na_&utm_medium=FT~notapply&gad_source=1&gad_campaignid=21890170243&gbraid=0AAAAAo-fB8EEV0rKA_ZhEUHqSR2lYF8Ru&gclid=CjwKCAjw24vBBhABEiwANFG7yx0KNfOLnPxdwkMRMpl1nQLEk_o7-x6qiszKWDfFfCb-X_TsbhfHTBoCRn8QAvD_BwE" target="_blank">
             <img src="https://neonseguros.com.br/wp-content/uploads/2024/05/byd-dolphinmini-polar-black.jpg" alt="dolphin mini">
             <video src="videos/dolphin-mini.mp4" muted loop></video>
@@ -90,7 +66,7 @@
             <div class="overlay-button">Visitar Loja</div>
           </a>
         </div>
-        <div class="media-box" data-video="videos/ex-30.mp4" data-img="https://i0.statig.com.br/bancodeimagens/a5/nv/7s/a5nv7s7bp0rksiptr5f549vki.jpg" data-link="#">
+        <div class="media-box hidden" data-video="videos/ex-30.mp4" data-img="https://i0.statig.com.br/bancodeimagens/a5/nv/7s/a5nv7s7bp0rksiptr5f549vki.jpg" data-link="#">
           <a href="http://volvocars.com/br/cars/ex30-electric/" target="_blank">
             <img src="https://i0.statig.com.br/bancodeimagens/a5/nv/7s/a5nv7s7bp0rksiptr5f549vki.jpg" alt="Ex 30">
             <video src="videos/ex30.mp4" muted loop></video>
@@ -98,7 +74,7 @@
             <div class="overlay-button">Visitar Loja</div>
           </a>
         </div>
-        <div class="media-box" data-video="videos/ora-03.mp4" data-img="https://cdn.motor1.com/images/mgl/40mjrK/s3/avaliacao---byd-yuan-plus-br-4.jpg" data-link="#">
+        <div class="media-box hidden" data-video="videos/ora-03.mp4" data-img="https://cdn.motor1.com/images/mgl/40mjrK/s3/avaliacao---byd-yuan-plus-br-4.jpg" data-link="#">
           <a href="https://www.byd.com/br/car/yuan-pro?&utm_campaign=byd_PH~tffc_OJ~pgview_CN~byd-pmax-line-up_MK~nacio_&utm_source=PB~gpmax_&utm_content=AG~yuan-pro-generico_TG~da_DG~25g_MD~yuanpr_ME~sepma_CH~display_PT~goads_CR~pmax-dinamico_CT~notapply_VD~na_&utm_medium=FT~notapply&gad_source=1&gad_campaignid=21890170243&gbraid=0AAAAAo-fB8EEV0rKA_ZhEUHqSR2lYF8Ru&gclid=CjwKCAjw24vBBhABEiwANFG7y_hUOkqOKkVUr6y0gl6ulg-hhvOSrxvaIk8oJYDl528hyEuq0-AKpBoCnHMQAvD_BwE" target="_blank">
             <img src="https://cdn.motor1.com/images/mgl/40mjrK/s3/avaliacao---byd-yuan-plus-br-4.jpg" alt="yuan pro">
             <video src="videos/yuan-pro.mp4" muted loop></video>
@@ -106,7 +82,7 @@
             <div class="overlay-button">Visitar Loja</div>
           </a>
         </div>
-        <div class="media-box" data-video="videos/xc40.mp4" data-img="https://cdn.motor1.com/images/mgl/v1Wwb/s3/volvo-xc40.jpg" data-link="#">
+        <div class="media-box hidden" data-video="videos/xc40.mp4" data-img="https://cdn.motor1.com/images/mgl/v1Wwb/s3/volvo-xc40.jpg" data-link="#">
           <a href="https://www.volvocars.com/br/cars/xc40-electric/" target="_blank">
             <img src="https://cdn.motor1.com/images/mgl/v1Wwb/s3/volvo-xc40.jpg" alt="xc40">
             <video src="videos/xc40.mp4" muted loop></video>
@@ -118,8 +94,8 @@
     </section>
 
     <!-- Carros Eletricos custo-beneficio -->
-    <section class="custo-beneficio hidden">
-      <h1>Elétricos Mais Custo Beneficio</h1>
+    <section class="custo-beneficio">
+      <h1 class="hidden">Elétricos Mais Custo Beneficio</h1>
       <div class="car-block hidden" >
         <img src="https://cdn.motor1.com/images/mgl/Ooo3NB/s1/renault-kwid-e-tech.jpg" alt="Renault Kwid E-Tech">
         <div class="info">
