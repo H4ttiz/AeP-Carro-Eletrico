@@ -84,7 +84,7 @@ nav {
   transition: 0.3s;
 }
 
-/* RESPONSIVO */
+/* RESPONSIVO NAV */
 @media (max-width: 768px) {
   .nav-list {
     position: absolute;
@@ -110,7 +110,6 @@ nav {
     display: flex;
   }
 
-  /* Oculta menu horizontal padrão em telas pequenas */
   .nav-list li {
     margin: 20px 0;
   }
@@ -130,17 +129,75 @@ nav {
 
 main {
   margin-top: 8vh;
-  min-height: calc(100vh - 8vh - 100px); /* ajusta o espaço, considerando também a altura do footer */
+  min-height: calc(100vh - 8vh - 100px);
 }
-
-
 
 footer {
-    background: #23232e;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background: #23232e;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
+
+.flex-container {
+  display: flex;
+  gap: 40px;
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+  color: #000022;
+  background: white;
+}
+
+.flex-container .texto {
+  flex: 1;
+}
+
+.flex-container .imagem-lateral {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container .imagem-lateral img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* IMAGENS LATERAIS FIXAS */
+.imagem-lateral {
+  position: fixed;
+  top: 0;
+  height: 100vh;             /* ocupa toda a altura da viewport */
+  width: 15vw;               /* largura relativa à viewport (15%) */
+  min-width: 100px;          /* largura mínima para telas maiores */
+  max-width: 200px;          /* largura máxima para não ficar enorme */
+  object-fit: cover;         /* cobre todo o espaço sem distorcer */
+  opacity: 0.8;
+  z-index: 0;
+  pointer-events: none;      /* permite interação com o conteúdo atrás */
+}
+
+.imagem-esquerda {
+  left: 0;
+}
+
+.imagem-direita {
+  right: 0;
+}
+
+/* Esconde nas telas pequenas para evitar poluição visual */
+@media (max-width: 768px) {
+  .imagem-lateral {
+    display: none;
+  }
+}
+
+
