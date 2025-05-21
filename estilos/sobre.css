@@ -33,7 +33,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #23232e;
+  background-color: #1313f0;
   color: white;
   height: 8vh;
   padding: 0 20px;
@@ -133,14 +133,12 @@ main {
 }
 
 footer {
-  background: #23232e;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
+    background: #1313f0;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+  }
 
 .flex-container {
   display: flex;
