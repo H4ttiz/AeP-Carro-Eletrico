@@ -341,7 +341,35 @@ nav {
     padding: 10px 15px;
     border-radius: 5px;
   }
+
+  /* MAPA */
+  .mapa-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.mapa-section h1 {
+  margin-bottom: 20px;
+  font-size: 5em;
+}
   
+.mapa-section h5 {
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+  font-weight: normal;
+}
+
+.mapa-botao {
+  text-align: left;
+  max-width: 800px;
+  margin: 30px auto 0 auto;
+}
+
+.mapa-btn {
+  padding: 16px 32px;
+  font-size: 20px;
+}
+
   footer {
     background: #23232e;
     color: #fff;
