@@ -132,14 +132,16 @@ main {
   min-height: calc(100vh - 8vh - 100px);
 }
 
+/* FOOTER */
 footer {
-    background: #1313f0;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-  }
+  background: #1313f0;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
 
+/* FLEX CONTAINER PARA CONTEÚDO PRINCIPAL */
 .flex-container {
   display: flex;
   gap: 40px;
@@ -173,14 +175,14 @@ footer {
 .imagem-lateral {
   position: fixed;
   top: 0;
-  height: 100vh;             /* ocupa toda a altura da viewport */
-  width: 15vw;               /* largura relativa à viewport (15%) */
-  min-width: 100px;          /* largura mínima para telas maiores */
-  max-width: 200px;          /* largura máxima para não ficar enorme */
-  object-fit: cover;         /* cobre todo o espaço sem distorcer */
+  height: 100vh;
+  width: 15vw;
+  min-width: 100px;
+  max-width: 200px;
+  object-fit: cover;
   opacity: 0.8;
   z-index: 0;
-  pointer-events: none;      /* permite interação com o conteúdo atrás */
+  pointer-events: none;
 }
 
 .imagem-esquerda {
@@ -191,11 +193,116 @@ footer {
   right: 0;
 }
 
-/* Esconde nas telas pequenas para evitar poluição visual */
 @media (max-width: 768px) {
   .imagem-lateral {
     display: none;
   }
 }
 
+/* -------- ESTILIZAÇÃO DAS PARTES ESCRITAS -------- */
 
+/* Blocos padrão */
+section {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  margin: 40px auto;
+  max-width: 960px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* TÍTULOS DECORADOS */
+section h2, section h3 {
+  background: linear-gradient(to right, #1313f0, #00d4ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 24px;
+  letter-spacing: 1.5px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+section h2::after, section h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #00d4ff;
+  border-radius: 2px;
+}
+
+/* Parágrafos e listas */
+section p,
+section li,
+section dd {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+section ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+section li::marker {
+  color: #1313f0;
+}
+
+/* Citações / destaques */
+blockquote {
+  background-color: #eef3ff;
+  border-left: 5px solid #1313f0;
+  padding: 20px 30px;
+  font-style: italic;
+  color: #dadae2;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+/* Ícones decorativos em listas */
+section li::before {
+  content: "★ ";
+  color: #00d4ff;
+  margin-right: 6px;
+  font-weight: bold;
+}
+
+/* -------- CAIXAS AZUIS DESTACADAS -------- */
+.caixa-azul {
+  background: #1313f0;
+  padding: 30px;
+  border-radius: 16px;
+  color: white;
+  margin: 40px auto;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.caixa-azul h2,
+.caixa-azul h3,
+.caixa-azul p,
+.caixa-azul li {
+  color: #fff !important;
+}
+
+.caixa-azul h2::after,
+.caixa-azul h3::after {
+  background-color: #00ffff;
+}
+
+.caixa-azul li::before {
+  color: #00ffff;
+}
