@@ -233,6 +233,11 @@ nav {
   margin: 30px auto;
 }
 
+.maisV {
+  text-align: center;
+  font-size: 4em;
+}
+
 .media-box {
   position: relative;
   overflow: hidden;
