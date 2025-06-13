@@ -134,10 +134,13 @@ main {
   background-color: #121212; /* fundo escuro elegante */
   color: #f0f0f0; /* texto claro */
   padding: 4rem 2rem;
+  font-size: 1.5rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
 .escuro::after {
@@ -145,12 +148,11 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  width: 40%;
+  width: 45%;
   height: 100%;
   background-image: url('../img/song-plus-premiumPC.PNG');
   background-attachment: fixed;
-  background-position: left;
-  background-size: cover;
+  background-position: center left;
   border-radius: 0 12px 12px 0;
   z-index: 1;
   opacity: 0.5;
@@ -162,22 +164,41 @@ main {
   z-index: 2;
 }
 
+.escuro h1 {
+  color: #1313f0; /* azul neon */
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.7);
+  max-width: 50%;
+}
 
 .escuro h2 {
   color: #1313f0; /* verde neon */
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
   border-left: 6px solid #1313f0;
   padding-left: 0.75rem;
+  max-width: 50%;
 }
 
 .escuro h2 i {
+  color: #1313f0;
   margin-right: 0.5rem;
+  max-width: 50%;
+}
+
+.escuro h3 {
+  color: #1313f0; /* verde neon */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  max-width: 50%;
 }
 
 .escuro p {
   margin-bottom: 1.2rem;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  max-width: 50%;
 }
 
 .escuro ul {
@@ -185,12 +206,15 @@ main {
   margin-bottom: 1.5rem;
   list-style: none;
   padding: 0;
+  max-width: 50%;
 }
 
 .escuro ul li {
+
   position: relative;
   padding-left: 1.5rem;
   margin-bottom: 0.75rem;
+  max-width: 80%;
 }
 
 .escuro ul li::before {
@@ -198,11 +222,19 @@ main {
   position: absolute;
   left: 0;
   color: #1313f0;
+  max-width: 50%;
+  font-size: 1rem;
 }
 
 .escuro strong {
   color: #ffffff;
   font-weight: 600;
+}
+
+.escuro dl {
+  margin: 2rem 0;
+  border-radius: 8px;
+  font-size: 1.2rem;
 }
 
 .escuro blockquote {
@@ -211,6 +243,8 @@ main {
   margin: 2rem 0;
   color: #ccc;
   font-style: italic;
+  max-width: 50%;
+  font-size: 1.2rem;
 }
 
 
@@ -220,7 +254,32 @@ main {
   padding: 4rem 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.8;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.normal::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  background-image: url('https://quatrorodas.abril.com.br/wp-content/uploads/2024/01/BYD-Dolphin-Mini-2024-15.jpg?quality=70&strip=info');
+  background-attachment: fixed;
+  background-position: right center;
+  background-size: cover;
+  border-radius: 0 12px 12px 0;
+  z-index: 1;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.normal > * {
+  position: relative;
+  z-index: 2;
 }
 
 .normal h1 {
@@ -228,35 +287,46 @@ main {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   text-align: center;
+  max-width: 50%;
 }
 
 .normal h2 {
   color: #00695c;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
   border-left: 6px solid #00bfa5;
   padding-left: 0.75rem;
+  max-width: 50%;
+}
+
+.normal p {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  max-width: 50%;
 }
 
 .normal ul {
   list-style: none;
   padding: 0;
   margin: 2rem 0;
+  max-width: 50%;
 }
 
 .normal ul li {
   position: relative;
   padding-left: 2rem;
   margin-bottom: 1.2rem;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  max-width: 80%;
 }
 
 .normal ul li::before {
-  content: "✅";
+  content: "✔";
   position: absolute;
   left: 0;
   color: #00bfa5;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  max-width: 50%;
 }
 
 .normal strong {
@@ -273,6 +343,23 @@ main {
   font-style: italic;
   font-size: 1.05rem;
   border-radius: 8px;
+  max-width: 50%;
+}
+
+.btn-funcionalidade {
+  margin-top: 8px;
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-funcionalidade:hover {
+  background-color: #0056b3;
 }
 
 #link-topo {
