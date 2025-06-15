@@ -20,9 +20,10 @@ A interface do site foi planejada para ser **intuitiva, acessível e responsiva*
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML5** – Estrutura da página
-- **CSS3** – Estilização e responsividade
-- **JavaScript** – Funcionalidade, interatividade e integração com geolocalização
+- **HTML5** – Estrutura da página.
+- **CSS3** – Estilizações e responsividades especificas.
+- **JavaScript** – Funcionalidade, interatividade e integração com geolocalização.
+- **bootstrap** – Estilização e responsividade base do site.
 
 ## 🚀 Desenvolvimento e Resultados
 
