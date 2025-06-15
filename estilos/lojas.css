@@ -234,3 +234,71 @@ nav {
     transform: translateX(0);
     transition: all 1s;
   }
+
+  section.container {
+    background-color: #111;
+  }
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* Estilos para a seção de lojas */
+.card-img-container {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid #1313f0;
+}
+
+.card-img-container img {
+  transition: transform 0.5s ease;
+}
+
+.hover-effect:hover .card-img-container img {
+  transform: scale(1.05);
+}
+
+.store-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.rating {
+  font-size: 0.9rem;
+}
+
+.store-info {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.card {
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(19, 19, 240, 0.3);
+}
+
+.btn-primary {
+  background-color: #1313f0;
+  border-color: #1313f0;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0a0ab3;
+  border-color: #0a0ab3;
+  transform: translateY(-2px);
+}
